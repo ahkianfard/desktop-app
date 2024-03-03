@@ -81,11 +81,7 @@
       <div
         class="p-1 border-2 cursor-pointer bg-slate-400 rounded-2xl border-slate-400 hover:border-slate-500"
       >
-        <img
-          src="http://www.chap.sch.ir/sites/default/files/styles/image_node_book/public/book_image/1402-1403/C101.jpg"
-          alt="bookimage"
-          class="w-3/5 mx-auto rounded-xl"
-        />
+        <img src="/C101.jpg" alt="bookimage" class="w-3/5 mx-auto rounded-xl" />
         <div class="mt-4 mb-2 font-medium text-center text-slate-800">
           کتاب قرآن
         </div>
@@ -93,11 +89,7 @@
       <div
         class="p-1 border-2 cursor-pointer bg-slate-400 rounded-2xl border-slate-400 hover:border-slate-500"
       >
-        <img
-          src="http://www.chap.sch.ir/sites/default/files/styles/image_node_book/public/book_image/1402-1403/C103.jpg"
-          alt="bookimage"
-          class="w-3/5 mx-auto rounded-xl"
-        />
+        <img src="/C103.jpg" alt="bookimage" class="w-3/5 mx-auto rounded-xl" />
         <div class="mt-4 mb-2 font-medium text-center text-slate-800">
           کتاب فارسی
         </div>
@@ -105,11 +97,7 @@
       <div
         class="p-1 border-2 cursor-pointer bg-slate-400 rounded-2xl border-slate-400 hover:border-slate-500"
       >
-        <img
-          src="http://www.chap.sch.ir/sites/default/files/styles/image_node_book/public/book_image/1402-1403/C104.jpg"
-          alt="bookimage"
-          class="w-3/5 mx-auto rounded-xl"
-        />
+        <img src="/C104.jpg" alt="bookimage" class="w-3/5 mx-auto rounded-xl" />
         <div class="mt-4 mb-2 font-medium text-center text-slate-800">
           کتاب نگارش فارسی
         </div>
@@ -117,11 +105,7 @@
       <div
         class="p-1 border-2 cursor-pointer bg-slate-400 rounded-2xl border-slate-400 hover:border-slate-500"
       >
-        <img
-          src="http://www.chap.sch.ir/sites/default/files/styles/image_node_book/public/book_image/1402-1403/C105.jpg"
-          alt="bookimage"
-          class="w-3/5 mx-auto rounded-xl"
-        />
+        <img src="/C105.jpg" alt="bookimage" class="w-3/5 mx-auto rounded-xl" />
         <div class="mt-4 mb-2 font-medium text-center text-slate-800">
           کتاب ریاضی
         </div>
@@ -129,11 +113,7 @@
       <div
         class="p-1 border-2 cursor-pointer bg-slate-400 rounded-2xl border-slate-400 hover:border-slate-500"
       >
-        <img
-          src="http://www.chap.sch.ir/sites/default/files/styles/image_node_book/public/book_image/1402-1403/C106.jpg"
-          alt="bookimage"
-          class="w-3/5 mx-auto rounded-xl"
-        />
+        <img src="/C106.jpg" alt="bookimage" class="w-3/5 mx-auto rounded-xl" />
         <div class="mt-4 mb-2 font-medium text-center text-slate-800">
           کتاب علوم تجربی
         </div>
