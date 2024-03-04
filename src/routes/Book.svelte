@@ -1,7 +1,12 @@
 <script>
-  import EnNumToFa from "./../assets/EnNumToFa";
+  import EnNumToFa from "../scripts/EnNumToFa";
   import { fade } from "svelte/transition";
   import { onMount } from "svelte";
+  import books from "../api/book";
+
+  let default_id = 1;
+  $: default_class = books.Grades.filter((e) => e.id == default_id)[0];
+
   onMount(async () => {
     EnNumToFa(document.getElementsByTagName("body")[0]);
   });
@@ -15,67 +20,26 @@
       پایه های تحصیلی
     </h2>
     <div class="flex flex-col gap-2">
-      <div
-        class="flex items-center justify-between p-1 align-middle border cursor-pointer rounded-2xl border-slate-400 bg-slate-400 hover:border-slate-500 group"
-      >
-        <h3 class="pr-2">اول ابتدایی</h3>
-        <span
-          class="w-8 pt-1 ml-0 text-center border rounded-full bg-slate-500 border-slate-500 group-hover:border-slate-600"
-          >5</span
+      {#each books.Grades as { name, count, id }}
+        <div
+          class="flex items-center justify-between p-1 align-middle border cursor-pointer rounded-2xl border-slate-400 bg-slate-400 hover:border-slate-500 group"
+          on:click={() => (default_id = id)}
+          aria-hidden="true"
         >
-      </div>
-      <div
-        class="flex items-center justify-between p-1 align-middle border cursor-pointer rounded-2xl border-slate-400 bg-slate-400 hover:border-slate-500 group"
-      >
-        <h3 class="pr-2">دوم ابتدایی</h3>
-        <span
-          class="w-8 pt-1 ml-0 text-center border rounded-full bg-slate-500 border-slate-500 group-hover:border-slate-600"
-          >8</span
-        >
-      </div>
-      <div
-        class="flex items-center justify-between p-1 align-middle border cursor-pointer rounded-2xl border-slate-400 bg-slate-400 hover:border-slate-500 group"
-      >
-        <h3 class="pr-2">سوم ابتدایی</h3>
-        <span
-          class="w-8 pt-1 ml-0 text-center border rounded-full bg-slate-500 border-slate-500 group-hover:border-slate-600"
-          >9</span
-        >
-      </div>
-      <div
-        class="flex items-center justify-between p-1 align-middle border cursor-pointer rounded-2xl border-slate-400 bg-slate-400 hover:border-slate-500 group"
-      >
-        <h3 class="pr-2">چهارم ابتدایی</h3>
-        <span
-          class="w-8 pt-1 ml-0 text-center border rounded-full bg-slate-500 border-slate-500 group-hover:border-slate-600"
-          >9</span
-        >
-      </div>
-      <div
-        class="flex items-center justify-between p-1 align-middle border cursor-pointer rounded-2xl border-slate-400 bg-slate-400 hover:border-slate-500 group"
-      >
-        <h3 class="pr-2">پنجم ابتدایی</h3>
-        <span
-          class="w-8 pt-1 ml-0 text-center border rounded-full bg-slate-500 border-slate-500 group-hover:border-slate-600"
-          >9</span
-        >
-      </div>
-      <div
-        class="flex items-center justify-between p-1 align-middle border cursor-pointer rounded-2xl border-slate-400 bg-slate-400 hover:border-slate-500 group"
-      >
-        <h3 class="pr-2">ششم ابتدایی</h3>
-        <span
-          class="w-8 pt-1 ml-0 text-center border rounded-full bg-slate-500 border-slate-500 group-hover:border-slate-600"
-          >12</span
-        >
-      </div>
+          <h3 class="pr-2 font-medium">{name}</h3>
+          <span
+            class="w-8 pt-1 ml-0 text-center border rounded-full bg-slate-500 border-slate-500 group-hover:border-slate-600"
+            >{count}</span
+          >
+        </div>
+      {/each}
     </div>
   </aside>
   <div
     class="p-2 px-4 m-2 border rounded-2xl grow bg-slate-300 border-slate-400"
   >
     <h2 class="m-2 mb-4 text-lg font-semibold cursor-default text-slate-700">
-      کتاب های درسی - پایه اول
+      کتاب های درسی - {default_class.name}
     </h2>
     <div class="grid grid-cols-4 gap-4">
       <div
