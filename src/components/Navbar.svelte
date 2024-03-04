@@ -1,13 +1,13 @@
 <nav
-  class="fixed top-0 flex items-center justify-between p-2 py-1 align-middle border cursor-default w-svw bg-slate-300 border-slate-400 rounded-b-2xl font-vazirmatn"
+  class="fixed top-0 z-50 flex items-center justify-between p-2 py-1 align-middle border cursor-default w-svw bg-slate-300 border-slate-400 rounded-b-2xl font-vazirmatn"
 >
   <!--Nav right-->
   <div class="cursor-pointer">
-    <h1 class="text-2xl font-black text-slate-800">دانش آموز من</h1>
+    <h1 class="mr-2 text-2xl font-black text-slate-800">دانش آموز من</h1>
   </div>
   <!--Nav middle-->
   <div class="">
-    <div class="flex gap-1">
+    <div class="flex gap-2">
       <!--home-->
       <a href="#/">
         <div
@@ -110,7 +110,7 @@
     </div>
   </div>
   <!--Nav left-->
-  <div class="flex flex-row-reverse gap-1">
+  <div class="flex flex-row-reverse gap-2">
     <!--profile-->
     <div
       class="p-2 border rounded-full cursor-pointer bg-slate-400 hover:bg-slate-500 border-slate-500"
