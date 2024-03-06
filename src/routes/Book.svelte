@@ -55,7 +55,7 @@
           class="p-1 border-2 cursor-pointer bg-slate-400 group rounded-2xl border-slate-400 hover:border-slate-500"
         >
           <img
-            src={"/" + img}
+            src={"/books/" + img}
             alt={name}
             class="w-3/5 mx-auto rounded-xl group-hover:drop-shadow-xl"
           />
